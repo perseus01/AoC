@@ -1,10 +1,8 @@
 with open("1_input.txt", "r") as f:
     inp = f.read()
-    inp_list = list(inp)
-    print(inp_list)
     floor_no = 0
     pos = 0
-    for instruction in inp_list:
+    for instruction in inp:
         if instruction == "(":
             floor_no += 1
             pos += 1
