@@ -1,7 +1,6 @@
 with open("3_input.txt", "r") as f:
     inp = f.read()
     houses = [(0, 0)]
-    step = 1
     for direction in inp:
         current_location = houses[-1]
 
@@ -20,4 +19,4 @@ with open("3_input.txt", "r") as f:
         houses.append(new_location)
 
     houses = set(houses)
-    print(f"Total houses visited: {len(houses)}")
+    print(f"Houses receiving presents: {len(houses)}")
